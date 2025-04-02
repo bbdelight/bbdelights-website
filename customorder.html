@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>B&B Delights Menu</title>
+</head>
+
+<header>
+    <h1>B&B Delight Bakery</h1>
+    <p>Where Every Bite is a Delight!</p>
+
+    <div class="button">
+        <div class="dropdown">
+            <button class="dropdown-btn"> <a href="http://127.0.0.1:5500/B&B_Delights/homepage.html">Home</a></button>
+            <div class="dropdown-content">
+                <a href="http://127.0.0.1:5500/B&B_Delights/login.html">Login</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropdown-btn"> <a href ="http://127.0.0.1:5500/B&B_Delights/menu.html">Menu</a></button>
+            <div class="dropdown-content">
+                <a href="http://127.0.0.1:5500/B&B_Delights/cakes.html">Cakes</a>
+                <a href="http://127.0.0.1:5500/B&B_Delights/cookies.html">Cookies</a>
+                <a href="http://127.0.0.1:5500/B&B_Delights/Breads.html">Bread</a>
+                <a href="http://127.0.0.1:5500/B&B_Delights/Pastries.html">Pastries</a>
+                <a href="http://127.0.0.1:5500/B&B_Delights/customorder.html">Custom Oder</a>
+            </div>
+        </div>
+        <a href="http://127.0.0.1:5500/B&B_Delights/onlineordering.html">Online Ordering</a>
+        <a href="http://127.0.0.1:5500/B&B_Delights/aboutus.html">About Us</a>
+    </div>
+     
+    <div class="logo">
+        <img src="image.png" alt="B&B Delights Logo">
+    </div>     
+</header>
+
+    <main>
+        <h2>Custom Order Request</h2>
+        <p>Need something special? Fill out the form below to place a custom order!</p>
+
+        <form id="customOrderForm">
+            <label for="orderType">Order Type: </label>
+            <select id="orderType" required>
+                <option value="Custom Cake">Custom Cake</option>
+                <option value="Custom Cookies">Custom Cookies</option>
+                <option value="Custom Pastries">Custom Pastries</option>
+                <option value="Other">Other</option>
+                <div id="customOrderInput" style="display: none;">
+                    <label for="customOrderText">Describe Your Custom Order:</label>
+                    <input type="text" id="customOrderText" name="customOrderText" placeholder="Enter your custom request...">
+                </div>    
+            </select>
+            
+            <label for="flavor">Flavor:</label>
+            <input type="text" id="flavor" placeholder="E.g., Chocolate, Vanilla, Red Velvet" required>
+
+            <label for="size">Size:</label>
+            <input type="text" id="size" placeholder="E.g., 8-inch cake, dozen cookies" required>
+
+            <label for="instructions">Special Instructions:</label>
+            <textarea id="instructions" placeholder="Describe your request (e.g., message on cake, allergens)" required></textarea>
+
+            <label for="customerName">Your Name:</label>
+            <input type="text" id="customerName" placeholder="Enter your name" required>
+
+            <label for="contact">Contact Info:</label>
+            <input type="text" id="contact" placeholder="Phone number or email" required>
+
+            <button class="submit" type="submit">Submit Custom Order</button>
+        </form>
+    </main>
+    
+ <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 B&B Delight Bakery | All Rights Reserved</p>
+  </footer>
+  
+    <script src="script1.js"></script>
+    <script src="script2.js"></script>
+
+</body>
+</html>
